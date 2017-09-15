@@ -45,3 +45,7 @@ a {
 	font-style: italic;
 	background-color: rgb(255,255,200);
 }
+
+.img_link {
+	text-decoration: none;
+}
