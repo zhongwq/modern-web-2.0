@@ -37,6 +37,10 @@ a {
 	font-weight: bold;
 }
 
+.material {
+	line-height: 13pt;
+}
+
 .contentUnorderList {
 	list-style-image: url(src/pie_icon.gif);
 }
