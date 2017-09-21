@@ -110,10 +110,20 @@ html, body{
   padding: 10px;
 }
 
+.right-view dl{
+  margin: 0;
+}
+
 .right-view dt {
   font-weight: bold;
   margin-top: 1em;
 }
+
+.right-view dt:first-child {
+  margin-top: 0;
+}
+
+
 
 /*footer*/
 .footer{
