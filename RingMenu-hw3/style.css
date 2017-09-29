@@ -1,0 +1,242 @@
+html, body {
+	font-family: sans-serif;
+}
+
+/*apb*/
+.apb {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 35px;
+	width: 35px;
+	background: url("assets/images/atplus_white.png") no-repeat 50% 50%;
+	background-size: 80%;
+	border-radius: 100%;
+	background-color: gray;
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+#button:hover .apb {
+	background-image: url("assets/images/atplus_green.png");
+	background-size: 80%;
+	background-color: rgba(48, 63, 159, 1);
+	transform: scale(2);
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+/*info-bar part*/
+
+#info-bar {
+	position: absolute;
+	top: 45px;
+	left: 40px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border-radius: 100%;
+	background: #7E7E7E no-repeat 50% 50%;
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+	opacity: 0;
+}
+
+#button:hover #info-bar{
+	top: -200px;
+	left: -70px;
+	width: 170px;
+	height: 170px; 
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+
+li {
+	list-style-type: none;
+}
+
+#info-bar span {
+	margin-left: 10px;
+	vertical-align: top;
+}
+
+#info-bar img {
+	height: 50%;
+	width: auto;
+}
+
+.page,
+.mine {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+.user {
+	height: 50px;
+	width: 60px;
+	font-size: 20px;
+	color: white;
+}
+
+#button:hover .user {
+	top: 15px;
+	left: 60px;
+}
+
+.comment {
+	height: 70px;
+	width: 100px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#button:hover .comment {
+	top: 50px;
+	left: 45px;
+}
+
+.mine {
+	width: 45px;
+	height: 45px;
+	color: #24d693;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#button:hover .posted {
+	top: 110px;
+	left: 30px;
+}
+
+#button:hover .like {
+	top: 110px;
+	left: 100px;
+}
+
+#button:hover .page,
+#button:hover .mine {
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+#control-ring-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 0px;
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+	opacity: 0;
+}
+
+#button:hover #control-ring-container {
+	position: absolute;
+	overflow: visible;
+	opacity: 1;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+/*button part*/
+
+#button {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 400px;
+	margin: auto;
+}
+
+.mask,
+.message,
+.history,
+.sign,
+.setting {
+	position: absolute;
+	top: 15px;
+	left: 17px;
+	width: 40px;
+	height: 40px;
+	opacity: 0;
+	border-radius: 100%;
+	background: #7E7E7E no-repeat 50% 50%;
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+}
+
+.mask {
+	background-image: url("assets/images/mask.png");
+}
+
+#button:hover .mask {
+	top: -50px;
+	left: -90px;
+}
+
+.history {
+  background-image: url("assets/images/history.png");
+}
+
+#button:hover .history {
+  top: 0px;
+  left: -100px;
+}
+
+.message {
+	background-image: url("assets/images/message.png");
+}
+
+#button:hover .message {
+	top: 45px;
+	left: -80px;
+}
+
+.setting {
+	background-image: url("assets/images/setting.png");
+}
+
+#button:hover .setting {
+	top: 75px;
+	left: -35px;
+}
+
+.sign {
+	background-image: url("assets/images/signin.png");
+}
+
+#button:hover .sign {
+	top: 70px;
+	left: 20px;
+}
+
+#button:hover .mask,
+#button:hover .message,
+#button:hover .history,
+#button:hover .sign,
+#button:hover .setting {
+	transition: all 0.4s ease-in-out;
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+
+.unread {
+	position: absolute;
+	top: 0px;
+	left: 33px;
+	width: 15px;
+	height: 15px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #F6383E;
+	color: white;
+	border-radius: 100%;
+}
