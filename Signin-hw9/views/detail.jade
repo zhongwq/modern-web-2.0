@@ -1,0 +1,26 @@
+extends layout
+
+append js
+  script(type="text/javascript", src="javascripts/client.js")
+
+block content
+  .content
+    .logo
+    h1 Detail of User
+    .errors!= error
+    .info.page-content
+      p
+        | 用户名: 
+        span= user.username
+      p
+        | 学号: 
+        span= user.sid
+      p
+        | 电话: 
+        span= user.phone
+      p
+        | 邮箱: 
+        span= user.email
+  p.hint
+    a(href='/logout')
+      | Logout

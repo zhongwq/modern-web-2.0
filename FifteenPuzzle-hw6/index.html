@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="game.js"></script>
+</head>
+
+<body>
+    <h1>拼图游戏</h1>
+    <div class="gameInfo">
+    	<div class="info-left">Time: <div class="info" id="time">0</div></div>
+    	<div class="info-right">Steps: <div class="info" id="count">0</div></div>
+    </div>
+    <div class="game">
+    	<ul id="map"></ul>
+    	<div id="answer"></div>
+    	<div class="description">原图如上</div>
+    </div>
+    <input type="file" id="image" accept=".jpg, .jpeg, .png"/>
+    <div id="controllers">
+    	<div class="button button-3d" id="replay">Play</div>
+    	<div class="button button-3d" id="refresh">Reflesh</div>
+    	<div class="button button-3d" id="changeImg">Change Image</div>
+    	<div class="button button-3d" id="uploadImg">Upload Image</div>
+    </div>
+</body>
+
+</html>

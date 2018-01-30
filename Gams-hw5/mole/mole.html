@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Whac-a-mole</title>
+        <link type="text/css" rel="stylesheet" href="mole.css"/>
+        <script src="mole.js"></script>
+    </head>
+    <body>
+        <div class="description">
+            <h1>Whac-a-mole</h1>
+            <p>Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
+        </div>
+        <div class="gameInfo">
+            <div class="row">
+                <button class="left" id="gameCtl">Start Game | Stop Game</button>
+                <div class="right">Time: <div class="info" id="time">30</div></div>
+            </div>
+            <div class="row">
+                <div class="left"><div class="info" id="status">Waiting...</div></div>
+                <div class="right">Score: <div class="info" id="score">0</div></div>
+            </div>
+            <div class="row">
+                <button class="left" id="gameSizeCtl">Change Game Size</button>
+                <div class="right">Now Size: <div class="info" id="size">10*10</div></div>
+            </div>
+        </div>
+        <div class="game size_10" id="game_box">
+            <hr/>
+            <div id="main">
+            </div>
+            <hr/>
+        </div>
+        <div class="instruction">
+            <h2>Instruction:</h2>
+            <ol>
+                <li>Click on thet radio buttons(moles) as they are selected randomly by the computer.</li>
+                <li>1 point per hit, minus 1 point per miss.</li>
+            </ol>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+	font-family: "Century Gothic";
+}
+
+h1,h2 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.content {
+    text-align: center;
+}
+
+.description {
+    width: 600px;
+    margin: auto;
+}
+
+.wall {
+    border-width: 1px;
+    border-color: black;
+}
+
+.wall_formal {
+	background-color: #ededed;
+	transition: all 0.3s;
+}
+
+
+
+.wall_lose {
+    background-color: red;
+	transition: all 0.3s;
+}
+
+#gameInfo {
+    font-size: 22px;
+    height: 30px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.control_box {
+    margin-top: 3px;
+    height: 42px;
+    font-weight: bold;
+    text-align: center;
+    width: 42px;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.gamePlace {
+    height: 300px;
+    width: 480px;
+    margin: auto;
+}
+
+#top_wall {
+    height: 16%;
+    border-style: solid solid none solid;
+}
+
+.center {
+    height: 68%;
+}
+
+.center_left {
+    width: 28%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    float: left;
+}
+
+#center_1 {
+    height: 75%;
+    border-style: none solid solid solid;
+}
+
+#start {
+    background-color: #8fff88;
+    float: left;
+}
+
+.center_center {
+    width: 44%;
+    height: 100%;
+    border-top: 1px solid black;
+	overflow: hidden;
+    float: left;
+}
+
+#center_2 {
+    height: 75%;
+    width: 50%;
+    margin: 25% 25% 0 25%;
+    border-style: solid solid none solid;
+}
+
+.center_right {
+    width: 28%;
+    height: 100%;
+    float: left;
+}
+
+#center_3 {
+    height: 75%;
+    border-style: none solid solid solid;
+}
+
+#cheat_confirmer {
+	height: 25%;
+	width: 40px;
+	float: left;
+}
+
+#end {
+    background-color: #8880f9;
+    float: right;
+}
+
+#bottom_wall {
+    height: 16%;
+    border-style: solid;
+}
+
+#example {
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    border-style: solid;
+}

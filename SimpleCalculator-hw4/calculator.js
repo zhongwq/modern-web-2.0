@@ -64,13 +64,17 @@ window.onload = function() {
                 data = option;
             }
         } else {
-            if (isNaN(data[data.length-1]) && option === ".") {
-                showErr("输入非法，非数字后面不可以输入小数点，请确认输入！");
-            } else {
-                if (data[data.length-1] === ')')
+            if (isNaN(data[data.length-1]) && option === "."){
+                if (data[data.length-1] === ".")
+                    return;
+                if (data[data.length-1] === ")")
                     data += "*";
-                data += option;
-            }
+                data += "0";
+            } else if (data[data.length-1] === ")")
+                data += "*";
+            if (isNaN(data[data.length-2]) && data[data.length-2] != "." && data[data.length-1] == '0' && option != ".")
+                    data = data.substring(0, data.length-1);
+            data += option;
         }
         now_result.innerHTML = data;
     }
@@ -134,7 +138,7 @@ window.onload = function() {
         } else if (option === "=") {
             try {
                 data = eval(data).toString();
-                if (data == "" || data == "NaN") {
+                if (data == "" || data == "NaN" || data == "Infinity") {
                 	showErr("Syntax Error!");
                 	status = 1;
                 	return;
@@ -142,7 +146,7 @@ window.onload = function() {
                 if (data.length > 14) {
                     data = parseFloat(data).toExponential(9)+"";
                     var size = data.substring(data.lastIndexOf('e')+1, data.length);
-                    if(size >= -3 && size <= 0)
+                    if(size >= -9 && size <= 9)
                         data = eval(data)+"";
                 }
                 status = 1;

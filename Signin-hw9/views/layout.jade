@@ -1,0 +1,15 @@
+doctype html
+html(lang='zh-cn')
+  head
+    meta(charset='utf-8')
+
+    block css  
+      link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+
+    block js
+      script(type='text/javascript', src='http://code.jquery.com/jquery-3.2.1.min.js')
+      
+    title= title
+  body
+    block content
+

@@ -1,0 +1,281 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: Beige;
+    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.game {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}
+
+#map {
+    float: left;
+}
+
+#answer {
+    width: 300px;
+    height: 300px;
+    float: right;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description {
+    width: 300px;
+    margin-top: 10px;
+    float: right;
+    clear: right;
+    text-align: center;
+}
+
+.gameInfo {
+    width: 300px;
+    height: 80px;
+    margin: auto;
+}
+
+.info {
+    font-size: 23px;
+    color: white;
+    border: 2px solid #778899;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    background: #B0C4DE;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.info-left {
+    float: left;
+}
+
+.info-right {
+    float: right;
+}
+
+ul {
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+    width: 370px;
+    height: 370px;
+}
+
+li {
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    list-style-type: none;
+    background-size: 370px 370px;
+    transition: all 0.5s;
+}
+
+#controllers {
+    width: 800px;
+    height: 100px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.button {
+    top: 0;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0 40px;
+    background-color: #1E90FF;
+    box-shadow: 0 7px 0 #0880d7, 0 8px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 200px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s;
+    -webkit-user-select: none;
+}
+
+#image {
+    display:none;
+}/*隐藏原本的较丑的input[type="file"]样式*/
+
+.button:hover, .button:focus {
+    box-shadow: 0 7px 0 #077ace, 0 8px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.button:active {
+    top: 5px;
+    transition: all 0.15s;
+    box-shadow: 0 2px 0 #0662a6, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#map>li:hover {
+    transition: all 0.3s;
+    transform: translate(1px, -2px);
+}
+
+/*img分块设置*/
+
+#img0 {
+    background-position: 0 0;
+}
+
+.pos0 {
+    left: 0;
+    top: 0;
+}
+
+#img1 {
+    background-position: -90px 0;
+}
+
+.pos1 {
+    left: 25%;
+    top: 0;
+}
+
+#img2 {
+    background-position: -180px 0;
+}
+
+.pos2 {
+    left: 50%;
+    top: 0;
+}
+
+#img3 {
+    background-position: -270px 0;
+}
+
+.pos3 {
+    left: 75%;
+    top: 0;
+}
+
+#img4 {
+    background-position: 0 -90px;
+}
+
+.pos4 {
+    left: 0;
+    top: 25%;
+}
+
+#img5 {
+    background-position: -90px -90px;
+}
+
+.pos5 {
+    left: 25%;
+    top: 25%;
+}
+
+#img6 {
+    background-position: -180px -90px;
+}
+
+.pos6 {
+    left: 50%;
+    top: 25%;
+}
+
+#img7 {
+    background-position: -270px -90px;
+}
+
+.pos7 {
+    left: 75%;
+    top: 25%;
+}
+
+#img8 {
+    background-position: 0 -180px;
+}
+
+.pos8 {
+    left: 0;
+    top: 50%;
+}
+
+#img9 {
+    background-position: -90px -180px;
+}
+
+.pos9 {
+    left: 25%;
+    top: 50%;
+}
+
+#img10 {
+    background-position: -180px -180px;
+}
+
+.pos10 {
+    left: 50%;
+    top: 50%;
+}
+
+#img11 {
+    background-position: -270px -180px;
+}
+
+.pos11 {
+    left: 75%;
+    top: 50%;
+}
+
+#img12 {
+    background-position: 0 -270px;
+}
+
+.pos12 {
+    left: 0;
+    top: 75%;
+}
+
+#img13 {
+    background-position: -90px -270px;
+}
+
+.pos13 {
+    left: 25%;
+    top: 75%;
+}
+
+#img14 {
+    background-position: -180px -270px;
+}
+
+.pos14 {
+    left: 50%;
+    top: 75%;
+}
+
+#img15 {
+    background-image: none;
+}
+
+.pos15 {
+    left: 75%;
+    top: 75%;
+}
+

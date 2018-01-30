@@ -1,0 +1,33 @@
+extends layout
+
+append js
+  script(type="text/javascript", src="javascripts/client.js")
+
+block content
+  .content
+    .logo
+    h1 Sign Up Demo
+    .errors!= error
+    form.page-content(method='post')
+      .username
+        label(for='username') Username
+        input#username(name='username', value=user?user.username:"", required='true')
+      .password
+        label(for='password') Password
+        input#password(type='password', name='password', required='true')
+      .ensure_password
+        label(for='ensure_password') Ensure Password
+        input#ensure_password(type='password', name='ensure_password', required='true')
+      .sid
+        label(for='sid') StudentId
+        input#sid(name='sid', value=user?user.sid:"", required='true')
+      .phone
+        label(for='phone') Phone
+        input#phone(name='phone', value=user?user.phone:"", required='true')
+      .email
+        label(for='email') Email
+        input#email(name='email', value=user?user.email:"", required='true')
+      .buttons
+        input#submit.button(type='submit', value='Submit')
+        input#reset.button(type='reset', value='Reset')
+
