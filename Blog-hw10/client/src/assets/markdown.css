@@ -1,0 +1,289 @@
+.markdown-content {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 30px 100px;
+  min-height: 700px;
+  margin: auto;
+}
+
+.markdown-content a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.markdown-content a:visited {
+  color: #0b0080;
+}
+
+.markdown-content a:hover {
+  color: #06e;
+}
+
+.markdown-content a:active {
+  color: #faa700;
+}
+
+.markdown-content a:focus {
+  outline: thin dotted;
+}
+
+.markdown-content a:hover,
+.markdown-content a:active {
+  outline: 0;
+}
+
+.markdown-content ::-moz-selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #000;
+}
+
+.markdown-content ::selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #000;
+}
+
+.markdown-content a::-moz-selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #0645ad;
+}
+
+.markdown-content a::selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #0645ad;
+}
+
+.markdown-content p {
+  margin: 1em 0;
+}
+
+.markdown-content img {
+  max-width: 100%;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-weight: normal;
+  color: #111;
+  line-height: 1em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-weight: bold;
+}
+
+.markdown-content h1 {
+  font-size: 2.5em;
+}
+
+.markdown-content h2 {
+  font-size: 2em;
+}
+
+.markdown-content h3 {
+  font-size: 1.5em;
+}
+
+.markdown-content h4 {
+  font-size: 1.2em;
+}
+
+.markdown-content h5 {
+  font-size: 1em;
+}
+
+.markdown-content h6 {
+  font-size: 0.9em;
+}
+
+.markdown-content blockquote {
+  color: #666666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #eee solid;
+}
+
+.markdown-content hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.markdown-content pre,
+.markdown-content code,
+.markdown-content kbd,
+.markdown-content samp {
+  color: #000;
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 0.98em;
+}
+
+.markdown-content pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.markdown-content b,
+.markdown-content strong {
+  font-weight: bold;
+}
+
+.markdown-content dfn {
+  font-style: italic;
+}
+
+.markdown-content ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+.markdown-content mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-content sub,
+.markdown-content sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.markdown-content sup {
+  top: -0.5em;
+}
+
+.markdown-content sub {
+  bottom: -0.25em;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+.markdown-content li p:last-child {
+  margin: 0;
+}
+
+.markdown-content dd {
+  margin: 0 0 0 2em;
+}
+
+.markdown-content img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+.markdown-content .markdown-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-content td {
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 480px) {
+  .markdown-content body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-content body {
+    font-size: 16px;
+  }
+}
+
+@media print {
+  .markdown-content {
+    background: transparent !important;
+    color: black !important;
+    filter: none !important;
+    -ms-filter: none !important;
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  .markdown-content a,
+  .markdown-content a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-content hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+
+  .markdown-content a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-content .ir a:after,
+  .markdown-content a[href^="javascript:"]:after,
+  .markdown-content a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-content pre,
+  .markdown-content blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-content tr,
+  .markdown-content img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-content img {
+    max-width: 100% !important;
+  }
+
+  @page :left {
+    margin: 15mm 20mm 15mm 10mm;
+  }
+
+  @page :right {
+    margin: 15mm 10mm 15mm 20mm;
+  }
+
+  .markdown-content p,
+  .markdown-content h2,
+  .markdown-content h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-content h2,
+  .markdown-content h3 {
+    page-break-after: avoid;
+  }
+}
