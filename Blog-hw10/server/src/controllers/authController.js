@@ -56,6 +56,8 @@ module.exports = {
       })
       if (user.email === 'admin@test.com')
         await user.update({UserRoleId: 0})
+      else
+        await user.update({UserRoleId: 2})
       const userJson = user.toJSON()
       res.send({
         user: userJson,
